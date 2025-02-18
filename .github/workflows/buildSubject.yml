@@ -1,7 +1,6 @@
 name: Build Subject
 
 on:
-  schedule:
     # Run “at minute 0 past every 2nd hour.” (see https://crontab.guru)
     schedule: [{ cron: '0 */2 * * *' }]
     # 手动触发
