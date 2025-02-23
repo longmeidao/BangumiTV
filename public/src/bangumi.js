@@ -7,9 +7,9 @@ const load = `<img style="margin: 0 auto;" src="https://cdn.jsdelivr.net/gh/hans
 
 function getTab() {
   const types = {
-    'want': '想玩',
-    'watching': '在玩',
-    'watched': '玩过'
+    'want': '想看',
+    'watching': '在看',
+    'watched': '看过'
   }
   const url = `${bangumiUrl}/bangumi_total`
   getJSON(url, function (data) {
