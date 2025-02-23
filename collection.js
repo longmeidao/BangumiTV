@@ -6,7 +6,7 @@ import axios from 'axios'
 const bgmUser = process.env.BANGUMI_USER || 'geekaven'
 const bgmUrl = 'https://api.bgm.tv'
 const subjectType = {
-  game: 4,
+  anime: 2,
 }
 const collectionType = {
   want: 1, //想看
@@ -25,7 +25,7 @@ async function fetchCollection(limit, offset) {
   try {
     const { data } = await axios.get(url, {
       params: {
-        subject_type: subjectType['game'],
+        subject_type: subjectType['anime'],
         limit: limit,
         offset: offset,
       },
